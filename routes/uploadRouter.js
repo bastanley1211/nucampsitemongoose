@@ -33,7 +33,7 @@ uploadRouter
     authenticate.verifyAdmin,
     upload.single("imageFile"),
     (req, res) => {
-      res.statusCode = 403;
+      res.statusCode = 200;
       res.setHeader("Content-Type", "application/json");
       res.json(req.file);
     }
